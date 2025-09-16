@@ -159,14 +159,12 @@ const LoginPage = () => {
             </Button>
           </Form>
 
-          {/* Social Login Separator */}
+          {/* Social Login */}
           <div className="social-separator">
             <hr className="separator-line" />
-            <span className="separator-text">Hoặc đăng nhập bằng</span>
+            <span className="separator-text">Hoặc</span>
             <hr className="separator-line" />
           </div>
-
-          {/* Social Login Buttons */}
           <div className="social-login-buttons">
             <Button 
               type="button"
@@ -175,16 +173,7 @@ const LoginPage = () => {
               tabIndex="5"
             >
               <i className="fab fa-google"></i>
-              Google
-            </Button>
-            <Button 
-              type="button"
-              className="social-btn facebook-btn"
-              onClick={() => handleSocialLogin('facebook')}
-              tabIndex="6"
-            >
-              <i className="fab fa-facebook-f"></i>
-              Facebook
+              Đăng nhập với Google
             </Button>
           </div>
           

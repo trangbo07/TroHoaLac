@@ -202,14 +202,12 @@ const RegisterPage = () => {
             </Button>
           </Form>
 
-          {/* Social Login Separator */}
+          {/* Social Login */}
           <div className="social-separator">
             <hr className="separator-line" />
-            <span className="separator-text">Hoặc đăng ký bằng</span>
+            <span className="separator-text">Hoặc</span>
             <hr className="separator-line" />
           </div>
-
-          {/* Social Login Buttons */}
           <div className="social-login-buttons">
             <Button 
               type="button"
@@ -219,17 +217,7 @@ const RegisterPage = () => {
               disabled={loading}
             >
               <i className="fab fa-google"></i>
-              Google
-            </Button>
-            <Button 
-              type="button"
-              className="social-btn facebook-btn"
-              onClick={() => handleSocialLogin('facebook')}
-              tabIndex="7"
-              disabled={loading}
-            >
-              <i className="fab fa-facebook-f"></i>
-              Facebook
+              Đăng ký với Google
             </Button>
           </div>
           
