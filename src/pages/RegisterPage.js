@@ -78,7 +78,8 @@ const RegisterPage = () => {
   const handleSocialLogin = async (provider) => {
     if (loading) return;
     try {
-      const { error } = await supabase.auth.signInWithOAuth({ provider });
+      const redirectTo = `${window.location.origin}/oauth/callback`;
+      const { error } = await supabase.auth.signInWithOAuth({ provider, options: { redirectTo } });
       if (error) setError(error.message);
     } catch (e) {
       setError(e.message);
