@@ -1,0 +1,440 @@
+/* Profile Page Styles */
+.profile-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Account Info Styles */
+.account-info-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.account-info-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.account-info-item h6 {
+  color: #374151;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.account-info-item h6 i {
+  color: #6366f1;
+  width: 16px;
+}
+
+.account-info-item p {
+  margin-bottom: 0;
+  color: #6b7280;
+}
+
+
+.profile-sidebar {
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.profile-sidebar-content {
+  padding: 2rem 1.5rem;
+}
+
+.profile-user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.profile-avatar-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.profile-user-avatar:hover {
+  border-color: #6366f1;
+  transform: scale(1.05);
+}
+
+.profile-provider-badge {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.profile-provider-badge:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-provider-badge svg {
+  width: 12px;
+  height: 12px;
+}
+
+.profile-provider-badge i {
+  font-size: 10px;
+}
+
+/* Provider specific styles */
+.profile-provider-badge.google {
+  border-color: #4285f4;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.profile-provider-badge.google:hover {
+  border-color: #3367d6;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
+}
+
+.profile-provider-badge.facebook {
+  border-color: #1877f2;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.profile-provider-badge.facebook:hover {
+  border-color: #166fe5;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
+}
+
+.profile-provider-badge.email {
+  border-color: #6366f1;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.profile-provider-badge.email:hover {
+  border-color: #4f46e5;
+  background: linear-gradient(135deg, #f8f9fa 0%, #eef2ff 100%);
+}
+
+.profile-user-details {
+  flex: 1;
+}
+
+.profile-user-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.profile-user-id {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.profile-nav {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.profile-nav-link {
+  display: flex !important;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem !important;
+  color: #374151 !important;
+  text-decoration: none !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none !important;
+  background: none !important;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  position: relative;
+}
+
+.profile-nav-link:hover:not(.active) {
+  background-color: #f3f4f6 !important;
+  color: #1f2937 !important;
+  transform: translateX(4px);
+}
+
+.profile-nav-link.active:hover {
+  background-color: #1d4ed8 !important;
+}
+
+.profile-nav-link.active {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);
+}
+
+.profile-nav-link.active i {
+  color: #ffffff !important;
+}
+
+.profile-nav-link i {
+  width: 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.profile-nav-logout {
+  margin-top: 1rem;
+  border-top: 1px solid #e5e7eb !important;
+  padding-top: 1.5rem !important;
+  color: #dc2626 !important;
+}
+
+.profile-nav-logout:hover {
+  background-color: rgba(220, 38, 38, 0.1) !important;
+  color: #dc2626 !important;
+}
+
+.profile-main {
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.profile-content {
+  padding: 2.5rem 3rem;
+  max-width: 800px;
+}
+
+.profile-section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.profile-section-desc {
+  color: #6b7280;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.profile-form {
+  margin-top: 1.5rem;
+}
+
+.profile-form .form-label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.profile-form .form-control,
+.profile-form .form-select {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.profile-form .form-control:focus,
+.profile-form .form-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.profile-form .form-control::placeholder {
+  color: #9ca3af;
+}
+
+.profile-submit-btn {
+  background-color: #2563eb;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.profile-submit-btn:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.account-info {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.account-info p {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.account-info strong {
+  color: #374151;
+  margin-right: 0.5rem;
+}
+
+/* Responsive Design - Hide sidebar on mobile */
+@media (max-width: 992px) {
+  .profile-sidebar {
+    display: none;
+  }
+  
+  .profile-main {
+    width: 100% !important;
+    flex: none !important;
+  }
+  
+  .profile-content {
+    padding: 1.5rem 1rem;
+    max-width: none;
+  }
+  
+  .profile-section-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-content {
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .profile-section-title {
+    font-size: 1.1rem;
+  }
+  
+  .profile-section-desc {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-content {
+    padding: 1rem 0.5rem;
+  }
+  
+  .profile-section-title {
+    font-size: 1rem;
+  }
+  
+  .profile-section-desc {
+    font-size: 0.85rem;
+  }
+  
+  .profile-form .row .col-md-6 {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Animation for section transitions */
+.profile-content > div {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Active indicator animation */
+.profile-nav-link.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60%;
+  background-color: #ffffff;
+  border-radius: 0 2px 2px 0;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 4px;
+    opacity: 1;
+  }
+}
+
+/* Favorites section styling */
+.favorites-placeholder,
+.reviews-placeholder {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  border: 2px dashed #dee2e6;
+  margin-top: 1.5rem;
+}
+
+.favorites-placeholder .fas,
+.reviews-placeholder .fas {
+  color: #6b7280;
+}
+
+.favorites-placeholder h5,
+.reviews-placeholder h5 {
+  color: #374151;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.favorites-placeholder .text-muted,
+.reviews-placeholder .text-muted {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Custom scrollbar for sidebar */
+.profile-sidebar-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.profile-sidebar-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.profile-sidebar-content::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 2px;
+}
+
+.profile-sidebar-content::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}

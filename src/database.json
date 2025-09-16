@@ -1,0 +1,131 @@
+{
+    "users": [
+      {
+        "id": "CT1",
+        "name": "Nguyen Van A",
+        "email": "ownerA@example.com",
+        "phone": "0905123456",
+        "password_hash": "123456",
+        "role": "owner"
+      },
+      {
+        "id": "CT2",
+        "name": "Tran Thi B",
+        "email": "ownerB@example.com",
+        "phone": "0906234567",
+        "password_hash": "123456",
+        "role": "owner"
+      },
+      {
+        "id": "US1",
+        "name": "Le Van C",
+        "email": "userC@example.com",
+        "phone": "0907345678",
+        "password_hash": "123456",
+        "role": "renter"
+      },
+      {
+        "id": "US2",
+        "name": "Pham Thi D",
+        "email": "userD@example.com",
+        "phone": "0908456789",
+        "password_hash": "123456",
+        "role": "renter"
+      }
+    ],
+    "rooms": [
+      {
+        "id": "R1",
+        "owner_id": "CT1",
+        "title": "Phòng trọ gần Đại học Bách Khoa",
+        "price": 2500000,
+        "area": 20,
+        "address": "123 Lê Lợi, Hà Nội",
+        "status": "available"
+      },
+      {
+        "id": "R2",
+        "owner_id": "CT1",
+        "title": "Phòng trọ full nội thất",
+        "price": 3000000,
+        "area": 25,
+        "address": "456 Trần Hưng Đạo, Hà Nội",
+        "status": "available"
+      },
+      {
+        "id": "R3",
+        "owner_id": "CT2",
+        "title": "Phòng giá rẻ cho sinh viên",
+        "price": 1800000,
+        "area": 15,
+        "address": "789 Nguyễn Trãi, Hà Nội",
+        "status": "rented"
+      }
+    ],
+    "targets": [
+      { "id": "T1", "name": "Học sinh" },
+      { "id": "T2", "name": "Sinh viên" },
+      { "id": "T3", "name": "Công nhân" },
+      { "id": "T4", "name": "Người đi làm văn phòng" }
+    ],
+    "room_targets": [
+      { "room_id": "R1", "target_id": "T2" },
+      { "room_id": "R2", "target_id": "T4" },
+      { "room_id": "R3", "target_id": "T2" },
+      { "room_id": "R3", "target_id": "T3" }
+    ],
+    "amenities": [
+      { "id": "F1", "name": "Wifi" },
+      { "id": "F2", "name": "Tủ lạnh" },
+      { "id": "F3", "name": "Máy giặt" },
+      { "id": "F4", "name": "Phòng tắm riêng" },
+      { "id": "F5", "name": "Điều hòa" }
+    ],
+    "room_amenities": [
+      { "room_id": "R1", "amenity_id": "F1" },
+      { "room_id": "R1", "amenity_id": "F4" },
+      { "room_id": "R2", "amenity_id": "F1" },
+      { "room_id": "R2", "amenity_id": "F2" },
+      { "room_id": "R2", "amenity_id": "F3" },
+      { "room_id": "R2", "amenity_id": "F5" },
+      { "room_id": "R3", "amenity_id": "F1" }
+    ],
+    "surroundings": [
+      { "id": "S1", "name": "Chợ" },
+      { "id": "S2", "name": "Siêu thị" },
+      { "id": "S3", "name": "Bệnh viện" },
+      { "id": "S4", "name": "Trường học" },
+      { "id": "S5", "name": "Điểm xe bus" }
+    ],
+    "room_surroundings": [
+      { "room_id": "R1", "surrounding_id": "S4" },
+      { "room_id": "R1", "surrounding_id": "S5" },
+      { "room_id": "R2", "surrounding_id": "S2" },
+      { "room_id": "R2", "surrounding_id": "S3" },
+      { "room_id": "R3", "surrounding_id": "S1" },
+      { "room_id": "R3", "surrounding_id": "S5" }
+    ],
+    "room_images": [
+      {
+        "id": "IM1",
+        "room_id": "R1",
+        "image_url": "https://cdn.luxstay.com/rooms/12345/room1a.jpg"
+      },
+      {
+        "id": "IM2",
+        "room_id": "R1",
+        "image_url": "https://cdn.luxstay.com/rooms/12345/room1b.jpg"
+      },
+      {
+        "id": "IM3",
+        "room_id": "R2",
+        "image_url": "https://cdn.luxstay.com/rooms/23456/room2a.jpg"
+      },
+      {
+        "id": "IM4",
+        "room_id": "R3",
+        "image_url": "https://cdn.luxstay.com/rooms/34567/room3a.jpg"
+      }
+    ]
+  }
+  

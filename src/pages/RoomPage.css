@@ -1,0 +1,385 @@
+/* RoomsPage.css */
+.rooms-page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  /* Hero Search Section */
+  .hero-search-section {
+    background: linear-gradient(135deg, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+    padding: 2rem 0;
+    margin-bottom: 0;
+  }
+  
+  .search-bar-container {
+    background: white;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  
+  .search-input, .search-select {
+    border: none;
+    border-radius: 0;
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  .search-input:focus, .search-select:focus {
+    box-shadow: none;
+    border-color: #e0e0e0;
+  }
+  
+  .search-button {
+    background: #ff6b35;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  
+  .search-button:hover {
+    background: #e55a2b;
+  }
+  
+  /* Breadcrumb */
+  .breadcrumb {
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.875rem;
+  }
+  
+  .breadcrumb a {
+    color: #0066cc;
+  }
+  
+  /* Page Header */
+  .page-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  .results-count {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  /* Sort */
+  .sort-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sort-label {
+    font-size: 0.875rem;
+    color: #666;
+    white-space: nowrap;
+  }
+  
+  .sort-select {
+    min-width: 140px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Room Cards */
+  .room-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    background: white;
+  }
+  
+  .room-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+  }
+  
+  .room-image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .room-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .room-card:hover .room-image {
+    transform: scale(1.05);
+  }
+  
+  .hot-badge {
+    top: 12px;
+    left: 12px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .review-badge {
+    bottom: 12px;
+    left: 12px;
+  }
+  
+  .review-badge .badge {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .favorite-btn {
+    top: 12px;
+    right: 12px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .heart-icon {
+    font-size: 1.2rem;
+  }
+  
+  .room-card-body {
+    padding: 1rem;
+  }
+  
+  .room-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+  }
+  
+  .room-title a:hover {
+    color: #0066cc !important;
+  }
+  
+  .price-info {
+    margin-bottom: 0.75rem;
+  }
+  
+  .price-label {
+    color: #666;
+    font-size: 0.875rem;
+  }
+  
+  .price-value {
+    color: #ff6b35;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  
+  .room-details {
+    font-size: 0.875rem;
+  }
+  
+  .detail-item {
+    display: flex;
+    align-items: center;
+    color: #666;
+    margin-bottom: 0.25rem;
+  }
+  
+  .detail-text {
+    margin-right: auto;
+  }
+  
+  .area-text {
+    background: #e9ecef;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  
+  .location-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* Filter Sidebar */
+  .filter-sidebar {
+    position: sticky;
+    top: 2rem;
+  }
+  
+  .filter-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .filter-header {
+    background: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1rem;
+  }
+  
+  .filter-title {
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .filter-body {
+    padding: 1rem;
+  }
+  
+  .filter-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .filter-section:last-child {
+    margin-bottom: 0;
+  }
+  
+  .filter-section-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.75rem;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .filter-checkbox {
+    font-size: 0.875rem;
+  }
+  
+  .filter-checkbox .form-check-input {
+    margin-top: 0.2rem;
+  }
+  
+  .filter-checkbox .form-check-label {
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  .show-more-btn {
+    color: #0066cc;
+    font-size: 0.875rem;
+    text-decoration: none;
+  }
+  
+  .show-more-btn:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 991.98px) {
+    .hero-search-section {
+      padding: 1.5rem 0;
+    }
+    
+    .search-bar-container .row {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .search-input, .search-select {
+      border-right: none;
+      border-radius: 4px !important;
+    }
+    
+    .page-title {
+      font-size: 1.25rem;
+    }
+    
+    .filter-sidebar {
+      position: static;
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .room-card {
+      margin-bottom: 1rem;
+    }
+    
+    .room-image {
+      height: 180px;
+    }
+    
+    .sort-container {
+      justify-content: center;
+    }
+    
+    .sort-label {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .room-image {
+      height: 160px;
+    }
+    
+    .room-card-body {
+      padding: 0.75rem;
+    }
+    
+    .room-title {
+      font-size: 0.9rem;
+    }
+    
+    .filter-body {
+      padding: 0.75rem;
+    }
+  }
+  
+  /* Animation */
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .room-card {
+    animation: slideInUp 0.5s ease-out;
+  }
+  
+  /* Custom scrollbar for filter sidebar */
+  .filter-body {
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  
+  .filter-body::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .filter-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+  }
+  
+  .filter-body::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+  }
+  
+  .filter-body::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+  }
+  

@@ -1,0 +1,3 @@
+Title,Address,Price,Area,City,District,Ward,Status,Banner,Targets,Surroundings,Amenities,Images,Description
+Phòng trọ mẫu A,123 Đường ABC,2500000,20,Hồ Chí Minh,Quận 1,Phường Bến Nghé,available,https://example.com/banner-a.jpg,1,2,3,https://example.com/a1.jpg|https://example.com/a2.jpg,Mô tả phòng mẫu A
+Phòng trọ mẫu B,456 Đường XYZ,2000000,18,Hà Nội,Quận Hoàn Kiếm,Phường Hàng Trống,available,,2,3,,https://example.com/b.jpg,
